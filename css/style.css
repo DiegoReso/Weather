@@ -6,7 +6,9 @@
 }
 
 body{
-  background-image: linear-gradient(to bottom right, rgb(162, 136, 221), yellow);
+  background: linear-gradient(#e66465, #9198e5);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,4 +97,16 @@ body{
 
 .visible{
   display: block;
+}
+
+.error{
+  margin-top: 20px;
+  display: block;
+  color: rgb(235, 225, 225);
+  border: 1px solid red;
+  width: 200px;
+  position: relative;
+  left: 25%;
+  border-radius: 5px;
+  background-color: rgb(238, 109, 109);
 }

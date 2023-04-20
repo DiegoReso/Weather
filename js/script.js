@@ -14,6 +14,7 @@ const humidityElement = document.querySelector('#humidity span')
 const windElement = document.querySelector('#wind span')
 const divweatherData = document.querySelector('#weather-data')
 const container = document.querySelector('#container')
+const error = document.querySelector('#error')
 
 const getWeatherData = async(city) =>{
   
@@ -29,11 +30,23 @@ const showWeatherData = async (city) =>{
   const data = await getWeatherData(city)
 
 
-    if (data.cod == 404){
+    if (data.cod == 404 || cityInput.value == ''){
       
-      alert(`Cidade ${cityInput.value} não encontrada`)
+
+      divweatherData.classList.add('hide')
+      error.classList.add('error')
+      error.innerHTML = `Cidade "${cityInput.value}" nao encontrada`
+      
+      document.body.style.backgroundImage = ''
     
     }else{
+
+
+      document.body.style.backgroundImage = `url('https://source.unsplash.com/random/600x520/?${cityInput.value}')`;
+
+      error.classList.remove('error')
+      error.innerHTML = ''
+
       divweatherData.classList.remove('hide')
       cityElement.innerHTML = data.name
       tempElement.innerHTML = parseInt(data.main.temp)
