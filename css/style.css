@@ -1,4 +1,95 @@
-body{
+*{
+  margin: 0;
+  padding: 0;
   font-family: 'Righteous', cursive;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: linear-gradient(to bottom right, rgb(162, 136, 221), yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hide{
+  display: none;
+}
+
+
+.container{
+  text-align: center;
+  background-color: blueviolet;
+  box-shadow: 2px 2px 4px black;
+  padding: 2rem ;
+  border-radius: 1rem;
+  color: bisque;
+}
+
+.form h1{
+  margin-bottom: 2rem;
+}
+
+.form-input-container{
+  display: flex;
+  justify-content: center;
+}
+
+.form input{
+  padding: .8rem;
+  border: none;
+  flex: 1;
+  outline: none;
+  font-size: 19px;
+}
+
+#search{
+  padding: 1.2rem;
+  border: none;
+  background-color: rgb(196, 180, 180);
+  cursor: pointer;
+}
+
+#weather-data{
+  margin-top: 30px;
+  border-top: 1px solid white;
+  padding-top: 10px;
+
+}
+
+#weather-data h2{
+  display: flex;
+  justify-content: center;
   
 }
+
+#weather-data i{
+  margin-right: 3px;
+}
+
+#country{
+  margin-left: 1rem;
+}
+
+
+
+#details-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+#description-container{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+#temperature{
+  margin-top: 1rem;
+}
+
