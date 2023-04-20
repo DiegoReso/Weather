@@ -13,6 +13,7 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  position: relative;
 }
 
 .hide{
@@ -21,12 +22,14 @@ body{
 
 
 .container{
-  text-align: center;
-  background-color: blueviolet;
-  box-shadow: 2px 2px 4px black;
-  padding: 2rem ;
-  border-radius: 1rem;
-  color: bisque;
+    position: absolute;
+    background-color: blueviolet;
+    box-shadow: 2px 2px 4px black;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: bisque;
+    
+    
 }
 
 .form h1{
@@ -54,17 +57,23 @@ body{
 }
 
 #weather-data{
+  width: 300px;
   margin-top: 30px;
-  border-top: 1px solid white;
+  position: relative;
   padding-top: 10px;
-
+  left: 5px;
+  bottom: -165px;
+  background-color: rgba(0, 0, 0, 0.486);
+  color: white;
+  text-align: center;
+    
 }
 
 #weather-data h2{
   display: flex;
   justify-content: center;
-  
 }
+
 
 #weather-data i{
   margin-right: 3px;
@@ -97,6 +106,8 @@ body{
 
 .visible{
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .error{
