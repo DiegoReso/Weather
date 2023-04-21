@@ -42,7 +42,7 @@ const showWeatherData = async (city) =>{
     }else{
 
 
-      document.body.style.backgroundImage = `url('https://source.unsplash.com/random/600x520/?${cityInput.value}')`;
+      document.body.style.backgroundImage = `url('https://source.unsplash.com/random/520x600/?${cityInput.value}')`;
 
       error.classList.remove('error')
       error.innerHTML = ''
